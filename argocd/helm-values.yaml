@@ -10,4 +10,5 @@ configs:
 server:
   ingress:
     enabled: true
-    hostname: argocd.74.220.21.243.nip.io
+    ingressClassName: nginx
+    hostname: argocd.138.68.112.188.nip.io

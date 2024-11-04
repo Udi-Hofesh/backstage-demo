@@ -12,11 +12,11 @@ backstage:
       - name: NODE_ENV
         value: development
       - name: ARGOCD_URL
-        value: "http://argocd.74.220.21.243.nip.io/api/v1/"
+        value: "http://argocd.138.68.112.188.nip.io/api/v1/"
       - name: BASE_URL
-        value: "backstage.74.220.21.243.nip.io"
+        value: "backstage.138.68.112.188.nip.io"
       - name: CATALOG_LOCATION
-        value: "https://github.com/dirien/backstage-demo/blob/main/catalog/catalog-all.yaml"
+        value: "https://github.com/Udi-Hofesh/backstage-demo/blob/main/catalog/catalog-all.yaml"
       - name: POSTGRES_HOST
         value: "backstage-rw"
       - name: POSTGRES_PORT
@@ -25,5 +25,5 @@ backstage:
         value: "0"
   ingress:
     enabled: true
-    className: ""
-    host: "backstage.74.220.21.243.nip.io"
+    className: nginx
+    host: "backstage.138.68.112.188.nip.io"

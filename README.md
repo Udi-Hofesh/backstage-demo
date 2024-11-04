@@ -23,7 +23,7 @@ several options to run the workshop:
 
 ### `.devcontainer` Configuration
 
-The `.devcontainer` configuration is used to create a containerized environment for the workshop. It contains all the
+The `.devcontainer` configuration is used to create a containerized environment for the wocrkshop. It contains all the
 tools and dependencies that are needed to run the workshop.
 
 All you need to do is, after forking the repository, decide what remote environment you want to use.
