@@ -24,6 +24,6 @@ metadata:
       icon: assignment
       type: logs-dashboard  
 spec:
-  owner: You!
+  owner: Udi-Hofesh
   type: service
   lifecycle: production
