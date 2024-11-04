@@ -20,7 +20,15 @@ First, we will deploy CloudNativePG operator to the cluster. This operator will 
 instance for our Backstage application.
 
 ```bash
+cat argocd/cnpg.yaml
 
+cp argocd/cnpg.yaml infra/.
+
+git add infra
+
+git commit -m "CPNG"
+
+git push
 ```
 
 > Observe CNPG rollout in Argo CD UI
@@ -101,15 +109,7 @@ create secret generic backstage-secrets \
 kubectl --namespace backstage \
 create secret generic backstage-secrets \
 --from-literal POSTGRES_USER=app \
---from-licat argocd/cnpg.yaml
-
-cp argocd/cnpg.yaml infra/.
-
-git add infra
-
-git commit -m "CPNG"
-
-git pushteral POSTGRES_PASSWORD=$DB_PASS \
+--from-literal POSTGRES_PASSWORD=$DB_PASS \
 --from-literal GITHUB_TOKEN=$GITHUB_TOKEN \
 --from-literal ARGOCD_AUTH_TOKEN=$ARGOCD_AUTH_TOKEN_ENCODED \
 --dry-run=client --output yaml \
